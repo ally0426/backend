@@ -8,7 +8,7 @@ const passport = require('passport');
 // Initialize the app
 const app = express();
 
-// Middlewares
+// Middleware
 // Form Data Middleware
 app.use(bodyParser.urlencoded({
     extended: false
@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 // Cors Middleware
 app.use(cors());
 
-// Seting up the static directory
+// Set up the static directory
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Use the passport Middleware
