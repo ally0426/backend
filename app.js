@@ -38,9 +38,9 @@ mongoose.connect(db, {
     console.log(`Unable to connect with the database ${err}`)
 });
 
-// app.get('/', (req, res) => {
-//     return res.send("<h1>Hello World</h1>");
-// });
+app.get('/', (req, res) => {
+    return res.send("<h1>Hello World</h1>");
+});
 // Bring in the Users route
 const users = require('./routes/api/users');
 app.use('/api/users', users);
